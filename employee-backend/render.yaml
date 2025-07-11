@@ -2,9 +2,9 @@ services:
   - type: web
     name: employee-backend
     env: java
-    rootDir: employee-backend
-    buildCommand: ./mvnw clean install
-    startCommand: ./mvnw spring-boot:run
+    rootDir: employee-backend   # 👈 tells Render to go inside this folder
+    buildCommand: mvn clean install
+    startCommand: mvn spring-boot:run
     plan: free
     branch: main
     region: oregon
