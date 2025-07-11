@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: employee-backend
+    env: java
+    rootDir: employee-backend
+    buildCommand: ./mvnw clean install
+    startCommand: ./mvnw spring-boot:run
+    plan: free
+    branch: main
+    region: oregon
